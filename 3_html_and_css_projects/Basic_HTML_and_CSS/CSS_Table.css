@@ -1,0 +1,27 @@
+table {
+    border: 2px solid black;
+}
+
+td:hover {
+    background-color: darkgray;
+    color:crimson
+
+}
+
+tr, th {
+    background-color: red;
+    color: floralwhite;
+}
+
+tr, td {
+    background-color: bisque;
+    color: black;
+}
+
+h1 {
+    text-align: center;
+  }
+
+  td {
+    text-align: center;
+  }
