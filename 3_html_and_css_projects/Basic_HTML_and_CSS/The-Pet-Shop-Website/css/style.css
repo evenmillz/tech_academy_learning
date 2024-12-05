@@ -1,0 +1,18 @@
+
+/*Import link for the Roboto font from fonts.google.com*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+    background-color: white;
+}
+
+/*NAVBAR*/ 
+
+li{
+    display: inline; 
+    padding: 5px;
+}
+
+a{
+    font-family: "Roboto", serif; /*Font from fonts.google.com/*
+}
