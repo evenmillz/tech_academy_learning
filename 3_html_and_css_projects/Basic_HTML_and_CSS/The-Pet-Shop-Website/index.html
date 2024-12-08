@@ -12,8 +12,8 @@
   </head>
   <body>
     <!--NAVBAR-->
-    <nav>
-      <ul>
+    <nav class="nav-bar">
+      <ul id="nav-border">
         <li><a href="index.html">HOME</a></li>
         <li><a href="contact.html">CONTACT</a></li>
       </ul>
@@ -30,66 +30,84 @@
     <!--HEADER-->
     <header>
       <div>
-        <h1>Welcome to The Pet Shop!</h1>
+        <h1 class="animate-text">Welcome to The Pet Shop!</h1>
       </div>
     </header>
     <blockquote
       cite="https://wellbeing.gmu.edu/famous-quotes-on-pets-and-well-being/"
     >
-      <h2>"Our pets are our family."" -Ana Monnar</h2>
+      <h2>"Our pets are our family." -Ana Monnar</h2>
     </blockquote>
     <!--PET IMAGES-->
     <section>
-      <div>
+      <div class="container">
         <h2>Choose a Pet!</h2>
         <div>
           <!--CAT IMAGE-->
-          <div id="cat">
-            <h3>Cats & Kittens</h3>
-            <img
-              src="Images/cats.png"
-              alt="Picture of Cats (Cat taking a selfie)"
-            />
+          <div id="cat" class="column">
+            <div class="image-container">
+              <h3>Cats & Kittens</h3>
+              <img
+                src="Images/cats.png"
+                alt="Picture of Cats (Cat taking a selfie)"
+              />
+              <div class="overlay"></div>
+            </div>
           </div>
           <!--DOG IMAGE-->
-          <div id="dog">
-            <h3>Dogs & Puppies</h3>
-            <img
-              src="Images/dogs.png"
-              alt="Picture of dogs (Dogs crowding a photo)"
-            />
+          <div id="dog" class="column">
+            <div class="image-container">
+              <h3>Dogs & Puppies</h3>
+              <img
+                src="Images/dogs.png"
+                alt="Picture of dogs (Dogs crowding a photo)"
+              />
+              <div class="overlay"></div>
+            </div>
           </div>
           <!--RABBIT IMAGE-->
-          <div id="rabbit">
-            <h3>Rabbits</h3>
-            <img
-              src="Images/rabbits.png"
-              alt="Picture of rabbits (Well...one cool rabbit)"
-            />
+          <div id="rabbit" class="column">
+            <div class="image-container">
+              <h3>Rabbits</h3>
+              <img
+                src="Images/rabbits.png"
+                alt="Picture of rabbits (Well...one cool rabbit)"
+              />
+              <div class="overlay"></div>
+            </div>
           </div>
           <!--GUINEA PIG IMAGE-->
-          <div id="guineapig">
-            <h3>Guinea Pigs</h3>
-            <img
-              src="Images/Guinea_Pigs.png"
-              alt="Picture of guinea pigs (Knock, knock! Come out of your frog home and play with me!)"
-            />
+          <div id="guineapig" class="column">
+            <div class="image-container">
+              <h3>Guinea Pigs</h3>
+              <img
+                src="Images/Guinea_Pigs.png"
+                alt="Picture of guinea pigs (Knock, knock! Come out of your frog home and play with me!)"
+              />
+              <div class="overlay"></div>
+            </div>
           </div>
           <!--FISH IMAGE-->
-          <div id="fish">
-            <h3>Fish</h3>
-            <img
-              src="Images/fish.png"
-              alt="Picture of fish (Puffer fish with puppy eyes)"
-            />
+          <div id="fish" class="column">
+            <div class="image-container">
+              <h3>Fish</h3>
+              <img
+                src="Images/fish.png"
+                alt="Picture of fish (Puffer fish with puppy eyes)"
+              />
+              <div class="overlay"></div>
+            </div>
           </div>
           <!--REPTILE IMAGE-->
-          <div id="reptiles">
-            <h3>Reptiles</h3>
-            <img
-              src="Images/bearded_dragon.png"
-              alt="Picture of bearded dragons (Bike ride followed by a relaxing evening)"
-            />
+          <div id="reptiles" class="column">
+            <div class="image-container">
+              <h3>Reptiles</h3>
+              <img
+                src="Images/bearded_dragon.png"
+                alt="Picture of bearded dragons (Bike ride followed by a relaxing evening)"
+              />
+              <div class="overlay"></div>
+            </div>
           </div>
         </div>
       </div>
@@ -97,7 +115,7 @@
     <!--VIDEOS-->
     <section>
       <!--DOG VIDEO-->
-      <div id="video">
+      <div id="video" class="container">
         <h3>Videos</h3>
         <iframe
           width="1280"
