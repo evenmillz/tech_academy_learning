@@ -2,7 +2,7 @@
 .nav-bar{
     position: sticky;
     top: 0;
-    z-index; 4; /*Sets the position of the navbar in the stack
+    z-index: 4; /*Sets the position of the navbar in the stack
     layer so it is on top*/
 }
 
@@ -88,7 +88,7 @@ the rollover-menu div tag*/
 /*FOOTER*/
 footer{
     background-color: #363636;
-    margin 30px -10px -10px -10px; /*Margin value order top,
+    margin: 30px -10px -10px -10px; /*Margin value order top,
     right, bottom, and left*/
     overflow: hidden; /*Hides excess margin space expanding
     past the browser window edge and prevents a left to right
