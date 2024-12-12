@@ -1,3 +1,8 @@
+/*Custom web fonts*/
+body {
+    font-family: 'Agu Display', serif;
+}
+
 /*NAVEBAR*/
 .nav-bar{
     position: sticky;
@@ -22,7 +27,7 @@ ul{
 
 a{
     display: block;
-    font-family: Calibri, sans-serif;
+    font-family: Agu Display, sans-serif;
     font-size: 23px;
     font-weight: 600;
     color: white;
@@ -98,7 +103,7 @@ footer{
 
 /*Styles the text in the footer*/
 .footer-text{
-    font-family: Calibri, sans-sarif;
+    font-family: Agu Display, sans-sarif;
     font-size: 23px;
     font-weight: 400;
     color: rgb(228, 159, 0);
@@ -140,7 +145,10 @@ the bookmark link is clicked on*/
 60% opacity*/
 .overlay:hover{
     opacity: 0.6;
+    transform: rotate(180deg); /*Smidget of a rotation added*/
+    transition: transform 0.5s ease, opacity 0.5s ease;
 }
+
 
 /*IMAGE TWO*/
 .zoom{
@@ -156,6 +164,7 @@ the bookmark link is clicked on*/
 .zoom:hover{
     transform: scale(1.5); /*Scales image 2 to grow half
     its size*/
+    filter: brightness(80%); /*Darkens*/
     transition: 0.5s ease-out;
 }
 
@@ -192,6 +201,7 @@ hover effect is triggered*/
 .circle:hover::before{
     animation: burst 1s;
     animation-fill-mode: forwards;
+    animation-duration: 6s;
 }
 
 /*Creates a growing circle effect*/
