@@ -28,6 +28,8 @@
             <a href="#dessert">Dessert</a>
           </div>
         </li>
+        <!--Link to the about section-->
+        <li><a href="#about">About</a></li>
         <!-- Link to the contact section -->
         <li><a href="#contact">Contact</a></li>
       </ul>
@@ -41,16 +43,18 @@
       <!--FEATURED RECIPE-->
       <div class="container" id="featured">
         <h2>Featured Recipe</h2>
-        <div class="column">
-          <img src="images/skillet-pizza.jpeg" />
+        <div class="column recipe-card-background">
+          <div class="recipe-container">
+            <img src="images/skillet-pizza.jpeg" />
+          </div>
         </div>
         <div class="column">
-          <h3>Deep Dish Skillet Pizza</h3>
+          <h3 id="featured-header">Deep Dish Skillet Pizza</h3>
           <h4>Prep Time:</h4>
           <p>30 - 40 minutes</p>
           <h4>Level:</h4>
           <p>medium</p>
-          <p>
+          <p id="featured-main-text">
             Deep dish pizza has got a lot going for it: a thick crust that's
             tender and chewy on the inside, but nicely crisped on the outside; a
             little extra room for piling on the toppings; and, deep dish is less
@@ -58,7 +62,7 @@
             care when rolling and stretching. Here, you just push the dough into
             the skillet and you're cooking. Save the leftovers for lunch!
           </p>
-          <input type="button" value="Recipe" />
+          <input id="featured-button" type="button" value="Recipe" />
         </div>
       </div>
       <!--RECIPE CARDS-->
@@ -66,76 +70,148 @@
         <h2>Recipes</h2>
         <!--PASTA-->
         <div class="column" id="pasta">
-          <h3>Saucy Tortellina Parm</h3>
-          <div>
-            <img src="images/tortelloni.jpeg" />
+          <div class="recipe-container">
+            <h3>Saucy Tortellini Parm</h3>
+            <div class="flip">
+              <!--FRONT-->
+              <div class="flip-front">
+                <img src="images/tortelloni.jpeg" />
+              </div>
+              <!--BACK-->
+              <div class="flip-back">
+                <div class="text-container">
+                  <h4>Prep Time:</h4>
+                  <p>20 - 30 minutes</p>
+                  <h4>Level:</h4>
+                  <p>easy</p>
+                  <input type="button" value="Recipe" />
+                </div>
+              </div>
+            </div>
           </div>
-          <h4>Prep Time:</h4>
-          <p>20 - 30 minutes</p>
-          <h4>Level:</h4>
-          <p>easy</p>
-          <input type="button" value="Recipe" />
         </div>
         <!--CHICKEN-->
-        <div class="column" id="chicken">
-          <h3>Mediterranean Chicken Thighs</h3>
-          <div>
-            <img src="images/chicken-thighs.jpeg" />
+        <div class="column recipe-card-background" id="chicken">
+          <div class="recipe-container">
+            <h3>Mediterranean Chicken Thighs</h3>
+            <div class="flip">
+              <!--FRONT-->
+              <div class="flip-front">
+                <img src="images/chicken-thighs.jpeg" />
+              </div>
+              <!--BACK-->
+              <div class="flip-back">
+                <div class="text-container">
+                  <h4>Prep Time:</h4>
+                  <p>20 - 30 minutes</p>
+                  <h4>Level:</h4>
+                  <p>easy</p>
+                  <input type="button" value="Recipe" />
+                </div>
+              </div>
+            </div>
           </div>
-          <h4>Prep Time:</h4>
-          <p>20 - 30 minutes</p>
-          <h4>Level:</h4>
-          <p>easy</p>
-          <input type="button" value="Recipe" />
         </div>
         <!--PORK-->
-        <div class="column" id="pork">
-          <h3>Crispy Pork Katsu & Rice</h3>
-          <div>
-            <img src="images/pork-katsu.jpeg" />
+        <div class="column recipe-card-background" id="pork">
+          <div class="recipe-container">
+            <h3>Crispy Pork Katsu & Rice</h3>
+            <div class="flip">
+              <!--FRONT-->
+              <div class="flip-front">
+                <img src="images/pork-katsu.jpeg" />
+              </div>
+              <!--BACK-->
+              <div class="flip-back">
+                <div class="text-container">
+                  <h4>Prep Time:</h4>
+                  <p>20 - 30 minutes</p>
+                  <h4>Level:</h4>
+                  <p>medium</p>
+                  <input type="button" value="Recipe" />
+                </div>
+              </div>
+            </div>
           </div>
-          <h4>Prep Time:</h4>
-          <p>20 - 30 minutes</p>
-          <h4>Level:</h4>
-          <p>medium</p>
-          <input type="button" value="Recipe" />
         </div>
         <!--BISCUITS-->
         <div class="column" id="biscuits">
-          <h3>Cheddar Cheese Biscuits</h3>
-          <div>
-            <img src="images/chedder-biscuits.jpeg" />
+          <div class="recipe-container">
+            <h3>Cheddar Cheese Biscuits</h3>
+            <div class="flip">
+              <!--FRONT-->
+              <div class="flip-front">
+                <img src="images/chedder-biscuits.jpeg" />
+              </div>
+              <!--BACK-->
+              <div class="flip-back">
+                <div class="text-container">
+                  <h4>Prep Time:</h4>
+                  <p>40 - 50 minutes</p>
+                  <h4>Level:</h4>
+                  <p>medium</p>
+                  <input type="button" value="Recipe" />
+                </div>
+              </div>
+            </div>
           </div>
-          <h4>Prep Time:</h4>
-          <p>40 - 50 minutes</p>
-          <h4>Level:</h4>
-          <p>medium</p>
-          <input type="button" value="Recipe" />
         </div>
         <!--FISH-->
         <div class="column" id="fish">
-          <h3>Baked Cod & Scalloped Potatoes</h3>
-          <div>
-            <img src="images/baked-cod.jpeg" />
+          <div class="recipe-container">
+            <h3>Baked Cod & Scalloped Potatoes</h3>
+            <div class="flip">
+              <!--FRONT-->
+              <div class="flip-front">
+                <img src="images/baked-cod.jpeg" />
+              </div>
+              <!--BACK-->
+              <div class="flip-back">
+                <div class="text-container">
+                  <h4>Prep Time:</h4>
+                  <p>30 - 40 minutes</p>
+                  <h4>Level:</h4>
+                  <p>easy</p>
+                  <input type="button" value="Recipe" />
+                </div>
+              </div>
+            </div>
           </div>
-          <h4>Prep Time:</h4>
-          <p>30 - 40 minutes</p>
-          <h4>Level:</h4>
-          <p>easy</p>
-          <input type="button" value="Recipe" />
         </div>
         <!--DESSERT-->
-        <div class="column" id="dessert">
-          <h3>S'mores Cake</h3>
-          <div>
-            <img src="images/smores.jpeg" />
+        <div class="column recipe-card-background" id="dessert">
+          <div class="recipe-container">
+            <h3>S'mores Cake</h3>
+            <div class="flip">
+              <!--FRONT-->
+              <div class="flip-front">
+                <img src="images/smores.jpeg" />
+              </div>
+              <!--BACK-->
+              <div class="flip-back">
+                <div class="text-container">
+                  <h4>Prep Time:</h4>
+                  <p>50 - 60 minutes</p>
+                  <h4>Level:</h4>
+                  <p>medium</p>
+                  <input type="button" value="Recipe" />
+                </div>
+              </div>
+            </div>
           </div>
-          <h4>Prep Time:</h4>
-          <p>50 - 60 minutes</p>
-          <h4>Level:</h4>
-          <p>medium</p>
-          <input type="button" value="Recipe" />
         </div>
+      </div>
+    </section>
+    <!--ABOUT-->
+    <section>
+      <div class="container" id="about">
+        <h2>About Us!</h2>
+        <p>
+          We are dedicated to bringing healthy and delicious food to everybody!
+          Questions? Feel free to reach out to us and ask away! Sign up, and
+          stay up to date with our latest recipes, always made simple, just for
+          you!
+        </p>
       </div>
     </section>
     <!--CONTACT FORM-->
