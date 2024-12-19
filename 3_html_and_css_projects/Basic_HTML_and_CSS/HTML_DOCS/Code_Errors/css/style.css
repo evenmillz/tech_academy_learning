@@ -1,8 +1,20 @@
 /*Syles the html file to contain a light blue background with 
-dark blue text, as instructed*/
+dark blue text*/
 html{
-    background-color: lightblue;
+    background-color: darkblue;
+    animation: mymove 5s infinite alternate; /*Applies animation
+    to the background color of the webpage*/
     color: darkblue
+}
+
+/*Creates the animation for the background color*/
+@keyframes mymove {
+    from {
+        background-color: rgb(43, 117, 127); /*beginning color*/
+    }
+    to {
+        background-color: lightblue; /* Ending color */
+    }
 }
 
 /*Styles the image to be corrected to the appropriate dimensions 
