@@ -312,3 +312,29 @@ other images on the page and overides the img type selector styling*/
     width: auto;
     height: 130px;
 }
+
+/*CONTACT FOOTER*/
+
+.contact-container{
+    background-color: rgba(0, 0, 0, 0.6);
+    border-top: 5px solid var(--main-color);
+    padding: 20px;
+    text-align: center;
+    margin: 0px -15px 0px -15px;
+    margin-top: 0;
+}
+
+.contact-title{
+    font-family: var(--main-font-family);
+    color: var(--accent-text-color);
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.contact-info{
+    font-family: var(--main-font-family);
+    color: var(--accent-text-color);
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
