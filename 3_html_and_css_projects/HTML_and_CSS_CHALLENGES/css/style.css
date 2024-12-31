@@ -56,23 +56,6 @@ img{
     filter: contrast(90%);
 }
 
-/*VIDEO STYLE*/
-
-.video-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px auto;
-    width: 100%;
-}
-
-.autoplay-video{
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-    opacity: 1;
-}
-
 /*OVERLAY TEXT STYLE*/
 .image-container{
     position: relative;
@@ -120,6 +103,23 @@ img{
 }
 
 .image-container:hover .hover-overlay{
+    opacity: 1;
+}
+
+/*VIDEO STYLE*/
+
+.video-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    width: 100%;
+}
+
+.autoplay-video{
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
     opacity: 1;
 }
 
