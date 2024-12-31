@@ -2,28 +2,65 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width initial-scale=1.0" />
-    <title>First Challenge</title>
-    <link href="css/style.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Challenges</title>
     <link href="css/style.css" rel="stylesheet" />
   </head>
   <body>
+    <!--NAVBAR-->
+    <div class="navbar">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <!--PARAGRAPH-->
+    <p class="hover-effect">Hover Effect!</p>
     <!--IMAGE-->
-    <div>
+    <div class="image-container">
       <img
         src="Images/IMG_0424.png"
         alt="Dad Code drinking coffee aka Dad Fuel"
         class="center" />
+      <!--TEXT OVERLAY-->
+      <div class="overlay-text">Caffeinated = Happy :-]</div>
+      <div class="hover-overlay">DadCode</div>
+    </div>
+    <!--MUTED VIDEO-->
+    <div class="video-container">
+      <video
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="auto"
+        class="autoplay-video">
+        <source src="Images/Coffee_Animal.mp4" type="video/mp4" />
+        <source src="Images/Coffee_Animal.ogg" type="video/ogg" />
+        Please update your browser to view this video
+      </video>
+    </div>
+    <!--TWO-COLUMN LAYOUT-->
+    <div class="two-column-layout">
+      <div class="column">
+        <h2>DadCode Caffeinated</h2>
+        <p>Happier, upbeat, and mentally soothed</p>
+      </div>
+      <div class="column">
+        <h2>DadCode Uncaffeinated</h2>
+        <p>
+          Quieter, more chill, probably conspiring on how to get some caffeine
+        </p>
+      </div>
     </div>
     <!--TABLE-->
     <div>
       <table>
         <tr>
           <th>Caffeinated</th>
-          <th>Uncaffeinated</th>
+          <td>Happy</td>
         </tr>
         <tr>
-          <td>Happy</td>
+          <th>Uncaffeinated</th>
           <td>Less Happy</td>
         </tr>
       </table>
