@@ -1,0 +1,13 @@
+/***** GENERAL STYLING *****/
+/* Body */
+body {
+    margin: 0% /* This ensures the site displays all the way
+to the edge of the browser screen */
+}
+
+/***** NAVBAR STYLING *****/
+.Navbar {
+    overflow: hidden; /* This ensures that any content that
+overflows beyond the boundary of our nav bar is not displayed
+*/
+}
