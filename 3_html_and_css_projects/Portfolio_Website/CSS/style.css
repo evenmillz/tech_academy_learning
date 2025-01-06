@@ -7,7 +7,116 @@ to the edge of the browser screen */
 
 /***** NAVBAR STYLING *****/
 .Navbar {
+    display: flex; /* Used flexbox for layout */
     overflow: hidden; /* This ensures that any content that
-overflows beyond the boundary of our nav bar is not displayed
+overflows beyond the boundary of the nav bar is not displayed
 */
+    background-color: black; /* This colors the navebar black */
+    position: fixed; /* This Keeps the navbar at the top of the
+screen as the user scrolls */
+    top: 0; /* This ensures no space is displayed above the
+navbar */
+    width: 100%; /* This makes the navbar span the entire width
+of the page */
+    z-index: 1; /* This ensures other elements don't display
+over the navbar */
+    -webkit-animation: moveNav 5s; /* This applies the moveNav
+animation below for Safari 4.0 - 8.0 */
+    animation: moveNav 5s; /* This applies the moveNav animation
+for all other browsers */
 }
+
+/* moveNav animation effect for moving the nav bar in from the
+left of the screen */
+@keyframes moveNav {
+    from {left: -100vw;} /* The navbar is starting off screen
+to the left */
+    to {left: 0vw;} /* This moves the navebar ito place on the
+screen */
+}
+
+/* Navbar links */ 
+.Navbar a {
+    float: left; /* This specifies that the text floats on the
+left on the navbar */
+    display: block; /* This ensures that other text will be
+displayed on the same line or row, instead of a new line */
+    color: white; /*This is the font color for the text on the
+navbar */
+    padding: 14px 16px; /* This adds padding around the text */
+    text-decoration: none; /* This gets rid of the underlines
+under the text on the navbar */
+    font-family: Avant Garde, Helvetica; /* This specifies the
+font family for text on the navbar */
+    font-size: 20px; /* This specifies the font size for text
+on the navbar */
+    text-align: center; /* This centers the text within its
+container */
+    position: relative; /* This sets  the text relative to its
+normal positioning, allowing us to use the animation below */
+    -webkit-animation: moveNavText 5.75s; /* Animation for
+Safari 4.0 - 8.0 */
+    animation: moveNavText 5.75s; /* Applies the moveNavText
+animation for 5.75s */
+}
+
+/* moveNavText animation effect for moving the navbar text from
+above the view to the navbar */
+@keyframes movNavText {
+    from {top: -100vw;} /* This sets the navbar text 100% above
+the viewport */
+    to {top: 0vw;} /* This lowers the navbar text onto the
+navbar */
+}
+
+/* Screens 576px and smaller will display navbar links equally
+distributed */
+@media screen and (max-width: 576px) {
+    .Navbar a{
+        width: 25%; /* This makes each link take up 1/4 of th
+navbar */
+        font-size: 12px;
+    }
+}
+
+/* Navbar hover effects */
+.Navbar a:hover {
+    background-color: #f4f4f4; /* Defines the background color
+that will display when you hover over the link */
+    color: black; /* This defines the font color that will
+display when navbar a elements are hovered over */
+    font-weight: bold; /* This makes the text on the navbar
+bold when hovered over */
+}
+
+/* Navbar home button */
+.Navbar a.active { /* This targets the a element on the navbar
+with the "active" class */
+    background-color: darkgray;
+}
+
+/***** END OF NAVBAR STYLING *****/
+
+/***** VIDEO STYLING *****/
+/* Formatting for background video */
+#Typing_Video {
+    position: fixed; /* this fixes the video to the page */
+    right: 0; /* This ensures there is no space between the
+edge of the video and the edge of the page */
+    bottom: 0; /* This ensures there is no space bewtween the
+bottom of the video and the bottom of the page */
+    min-width: 100%; /* This ensures the video is displayed
+across the full width of the page */
+    z-index: -1; /* This placs the video behind the other elements
+on the page */
+}
+
+/* Screens that are 576px and smaller will not display the
+background video */
+@media screen and (max-width: 576px){
+    #Typing_Video {
+        display: none;
+    }
+}
+
+/* texts over the video */
