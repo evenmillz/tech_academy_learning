@@ -44,7 +44,7 @@ elements */
     font-size: 20px; 
     padding-left: 20px; /*Adds padding to the left of the
 paragraph element */
-    padding-right: 20px; /* Adds padding to the right of th
+    padding-right: 20px; /* Adds padding to the right of the
 paragraph element */
 }
 
@@ -86,7 +86,7 @@ q {
 /* Image elements */
 img {
     filter: grayscale(35%); /* This rids the pictures of 35%
-of thier color */
+of their color */
     border-radius: 8px; /* Gives all images slightly rounded
 corners */
     max-width: 100%; /* Ensures all images stay within the
@@ -183,7 +183,7 @@ animation for 5.75s */
 
 /* moveNavText animation effect for moving the navbar text from
 above the view to the navbar */
-@keyframes movNavText {
+@keyframes moveNavText {
     from {top: -100vw;} /* This sets the navbar text 100% above
 the viewport */
     to {top: 0vw;} /* This lowers the navbar text onto the
@@ -339,7 +339,7 @@ container */
     padding: 12px; /* Adds padding within the text box */
     border: 1px solid #ccc; /* Setting a solid border and its
 color */
-    border-radius: 4px; /* Slightly rounds the corners of tthe
+    border-radius: 4px; /* Slightly rounds the corners of the
 text box border */
     box-sizing: border-box; /* This creates a box with a border
 around the contact form input boxes */
