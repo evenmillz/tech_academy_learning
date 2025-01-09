@@ -306,6 +306,7 @@ footer{
     font-size: 30px;
 }
 
+
 /*Specifically styles the footer image separate from the
 other images on the page and overides the img type selector styling*/
 .footer-img{
@@ -338,3 +339,34 @@ other images on the page and overides the img type selector styling*/
     line-height: 1.6;
     margin-bottom:10px;
 }
+
+/* Augmented Footer Section */
+.footer-container {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px 15px;
+    color: var(--accent-text-color);
+  }
+  
+  .footer-column {
+    padding: 10px;
+  }
+  
+  .footer-img {
+    height: 80px;
+    margin-bottom: 10px;
+  }
+  
+  .nav-link.footer-text {
+    color: var(--accent-text-color);
+    font-size: 24px;
+    text-decoration: none;
+  }
+  
+  .nav-link.footer-text:hover {
+    color: var(--main-color-accent);
+  }
+  
+  .footer-text {
+    font-size: 22px;
+    margin: 5px 0;
+  }
